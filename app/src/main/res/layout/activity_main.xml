@@ -14,7 +14,8 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/multiplyButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/multiplyButton" />
+        app:layout_constraintStart_toEndOf="@+id/multiplyButton"
+        android:onClick="clickFunction"/>
 
     <Button
         android:id="@+id/multiplyButton"
@@ -26,7 +27,8 @@
         app:layout_constraintEnd_toStartOf="@+id/divideButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/minusButton"
-        app:layout_constraintTop_toBottomOf="@+id/integer2" />
+        app:layout_constraintTop_toBottomOf="@+id/integer2"
+        android:onClick="clickFunction"/>
 
     <EditText
         android:id="@+id/integer2"
@@ -34,7 +36,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="51dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="number"
         android:text="Enter second integer"
         app:layout_constraintEnd_toEndOf="@+id/integer1"
         app:layout_constraintStart_toStartOf="@+id/integer1"
@@ -59,7 +61,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="67dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="number"
         android:text="Enter first integer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,7 +78,8 @@
         app:layout_constraintEnd_toStartOf="@+id/minusButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="clickFunction"/>
 
     <Button
         android:id="@+id/minusButton"
@@ -87,6 +90,7 @@
         app:layout_constraintEnd_toStartOf="@+id/multiplyButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/plusButton"
-        app:layout_constraintTop_toTopOf="@+id/multiplyButton" />
+        app:layout_constraintTop_toTopOf="@+id/multiplyButton"
+        android:onClick="clickFunction"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
